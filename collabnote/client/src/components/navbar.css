@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand a {
+    text-decoration: none;
+  }
+  
+  .navbar-brand h1 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navbar-item {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .navbar-item:hover {
+    background-color: #f5f5f5;
+    color: #007bff;
+  }
+  
+  .navbar-item.active {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.08);
+  }
+  
+  .navbar-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
+    right: 0.75rem;
+    height: 2px;
+    background-color: #007bff;
+    border-radius: 2px;
+  }
+  
+  .navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-name {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.375rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #f5f5f5;
+    border-color: #ccc;
+    color: #dc3545;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+    }
+    
+    .navbar-menu {
+      order: 3;
+      width: 100%;
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid #eee;
+      justify-content: center;
+    }
+    
+    .user-name {
+      display: none;
+    }
+  }

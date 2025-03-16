@@ -1,0 +1,24 @@
+{
+    "name": "collabnote",
+    "version": "1.0.0",
+    "description": "A collaborative notebook application for local networks",
+    "main": "server.js",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "server": "node server.js",
+        "client": "cd client && npm start",
+        "dev": "nodemon server.js",
+        "install-all": "npm install && cd client && npm install"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2",
+        "socket.io": "^4.8.1",
+        "uuid": "^9.0.1",
+        "vm2": "^3.9.19"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.1",
+        "nodemon": "^3.0.1"
+    }
+}

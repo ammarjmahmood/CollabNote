@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: collabnote
+    env: node
+    buildCommand: npm install && npm run install-all && cd client && npm run build && cd ..
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production

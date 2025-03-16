@@ -1,0 +1,245 @@
+.settings {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .settings h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .settings-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    padding: 1.75rem;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .settings-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .settings-section h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.75rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .form-group input[type="text"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  }
+  
+  .form-group input[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+  
+  .help-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #888;
+  }
+  
+  .radio-group {
+    margin-bottom: 1rem;
+  }
+  
+  .radio-label, .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .radio-label input, .checkbox-label input {
+    margin-right: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .view-example {
+    margin-top: 0.75rem;
+    margin-left: 1.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.75rem;
+    background-color: #f8f8f8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .view-example.scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 140px;
+    overflow-y: auto;
+  }
+  
+  .view-example.side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    height: 140px;
+    overflow-y: auto;
+  }
+  
+  .view-example.side-by-side .example-cell {
+    width: calc(50% - 0.5rem);
+  }
+  
+  .example-cell {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 40px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .user-avatar.large {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+  
+  .user-details {
+    flex: 1;
+  }
+  
+  .shortcuts-list {
+    margin-top: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .shortcut-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+  }
+  
+  .shortcut-item:last-child {
+    border-bottom: none;
+  }
+  
+  .shortcut-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .shortcut-keys {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+    background-color: #f1f1f1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: #333;
+  }
+  
+  .shortcut-desc {
+    color: #555;
+  }
+  
+  .export-buttons {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .export-btn {
+    padding: 0.625rem 1rem;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    color: #555;
+  }
+  
+  .export-btn:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .theme-selector,
+  .font-size-selector,
+  .timeout-selector {
+    width: 100%;
+    max-width: 250px;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 0.9375rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .settings {
+      padding: 1.5rem 1rem;
+    }
+    
+    .profile-info {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .user-details {
+      width: 100%;
+    }
+    
+    .export-buttons {
+      flex-direction: column;
+    }
+    
+    .export-btn {
+      width: 100%;
+    }
+  }

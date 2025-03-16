@@ -1,0 +1,25 @@
+collabnote/                    # Root project directory
+│
+├── server.js                  # Backend server file
+├── package.json               # Main project dependencies
+│
+├── data/                      # Data storage directory
+│   └── notebooks/             # Directory for storing notebook JSON files
+│
+└── client/                    # React frontend directory
+    ├── package.json           # React client dependencies
+    │
+    └── src/                   # React source code
+        ├── App.js             # Main application component (will be renamed to app.js)
+        ├── App.css            # Main application styling (will be renamed to app.css)
+        ├── index.js           # React entry point
+        │
+        └── components/        # React components directory
+            ├── login.js       # Login component
+            ├── login.css      # Login styling
+            ├── navbar.js      # Navigation component
+            ├── navbar.css     # Navigation styling
+            ├── notebook.js    # Notebook component
+            ├── notebook.css   # Notebook styling
+            ├── settings.js    # Settings component
+            └── settings.css   # Settings styling
