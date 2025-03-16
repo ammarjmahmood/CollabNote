@@ -21,13 +21,11 @@ const server = http.createServer(app);
 
 // Configure CORS for Socket.IO
 const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"],
-    allowedHeaders: ["my-custom-header"],
-    credentials: true
-  }
-});
+    cors: {
+      origin: process.env.NODE_ENV === 'production' ? false : "http://localhost:3000",
+      methods: ["GET", "POST"]
+    }
+  });
 
 const DATA_DIR = path.join(__dirname, 'data');
 const NOTEBOOKS_DIR = path.join(DATA_DIR, 'notebooks');
